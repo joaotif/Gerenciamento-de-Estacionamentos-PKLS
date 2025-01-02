@@ -1,0 +1,235 @@
+
+body{
+    font-family: 'Londrina Solid', sans-serif !important;
+    font-weight: 300;
+}
+
+
+/* Header */
+.Cabecalho {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    z-index: 99;
+    background-color: #277D8E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.DivLista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cabecalho ul {
+    display: flex;
+    align-items: center;
+    gap: 190px;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 0 2%;
+}
+
+.Cabecalho ul a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* .Cabecalho ul a:hover {
+    color: #1E9E5E;
+} */
+
+.Cabecalho img.Logo {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.ReservasMainContent {
+    width: 80%;
+    max-width: 1200px;
+    margin: 120px auto 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.Align {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.FiltroMes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.LabelFiltroMes {
+    font-weight: 600;
+    color: #2c3e50;
+    white-space: nowrap;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.SelectFiltroMes {
+    appearance: none;
+    padding: 8px 12px;
+    border: 2px solid #e0e4e7;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(45deg, transparent 50%, #2c3e50 50%), linear-gradient(135deg, #2c3e50 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding: 11px 35px 10px 10px;
+}
+
+.SelectFiltroMes:focus {
+    outline: none;
+    border-color: #277D8E;
+    box-shadow: 0 0 0 3px rgba(39, 125, 142, 0.2);
+}
+
+.DataContainer h2 {
+    background-color: #f0f4f7;
+    border-radius: 8px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.DataContainer h2:hover {
+    background-color: #e6eaed;
+}
+
+.ReservasTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.ReservasTable th {
+    background-color: #277D8E;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px;
+}
+
+.ReservasTable td {
+    padding: 15px;
+    border-bottom: 1px solid #e6e9ec;
+    transition: background-color 0.3s ease;
+}
+
+.ReservasTable tr:hover td {
+    background-color: #f7f9fa;
+}
+
+.BotaoCancelar {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.BotaoCancelar:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.BotaoCancelar:disabled {
+    background-color: #e0e4e7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.SemReservas {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f4f7;
+    border-radius: 12px;
+}
+
+.SemReservas h2 {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.EstrelasContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.EstrelasContainer svg {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.EstrelasContainer svg:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .ReservasMainContent {
+        width: 95%;
+        margin: 100px auto 20px;
+        padding: 15px;
+    }
+
+    .Align {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ReservasTable {
+        font-size: 0.9rem;
+    }
+
+    .ReservasTable td, .ReservasTable th {
+        padding: 10px;
+    }
+}
+
+.paddingReserva{
+
+    padding: 10px 0px 10px 0px;
+
+}
